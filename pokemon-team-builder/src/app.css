@@ -1,0 +1,131 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.pokedex {
+  margin-top: 50px;
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.pokemon-card {
+  border: 3px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.pokemon-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.team-view {
+  margin-bottom: 50px;
+}
+
+.team-slots {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.team-slot {
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.team-slot:hover{
+   transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.team-slot.empty {
+  background-color: #f0f0f0;
+}
+
+.app-banner {
+  background-color: #ef5350; /* A nice Pokémon red */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center; /* Center the logo horizontally */
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; /* Add space below the banner */
+}
+
+.app-banner img {
+  max-height: 60px; /* Control the height of the logo */
+  width: auto;
+}
+
+/* --- Other Styles --- */
+.App {
+  text-align: center;
+  /* Remove padding from App if the banner handles it */
+}
+
+.team-view-title{
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+.pokedex-bar{
+    border-radius: 50px;
+    border-color: rgb(74, 64, 249);
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.pokemon-types{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.pokemon-type{
+    padding: 3px 12px;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.normal { background-color: #A8A878; }
+.fire { background-color: #F08030; }
+.water { background-color: #6890F0; }
+.grass { background-color: #78C850; }
+.electric { background-color: #F8D030; color: #333; }
+.ice { background-color: #98D8D8; }
+.fighting { background-color: #C03028; }
+.poison { background-color: #A040A0; }
+.ground { background-color: #E0C068; color: #333; }
+.flying { background-color: #A890F0; }
+.psychic { background-color: #F85888; }
+.bug { background-color: #A8B820; }
+.rock { background-color: #B8A038; }
+.ghost { background-color: #705898; }
+.steel { background-color: #B8B8D0; }
+.dragon { background-color: #7038F8; }
