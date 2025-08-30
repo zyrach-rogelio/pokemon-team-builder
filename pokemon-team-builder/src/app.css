@@ -90,7 +90,7 @@
     border-radius: 50px;
     border-color: rgb(74, 64, 249);
     box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
-    padding: 5px;
+    padding: 5px 100px;
     margin-bottom: 30px;
 }
 
@@ -129,3 +129,25 @@
 .ghost { background-color: #705898; }
 .steel { background-color: #B8B8D0; }
 .dragon { background-color: #7038F8; }
+.fairy {background-color: #f791da;}
+
+.add-team-button{
+  margin-top: 10px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border-radius: 20px;
+  padding: 2px 7px;
+  font-weight: 500;
+  box-shadow: #333;
+}
+
+.add-team-button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.title-card{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+
+
+}

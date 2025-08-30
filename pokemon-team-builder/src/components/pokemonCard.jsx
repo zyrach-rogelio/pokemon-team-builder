@@ -27,7 +27,7 @@ const getButtonText = () => {
           </span>
         ))}
       </div>
-      <button onClick={() => addPokemon(pokemon)} disabled={isFull || isInTeam}>
+      <button className='add-team-button' onClick={() => addPokemon(pokemon)} disabled={isFull || isInTeam}>
         {getButtonText()}
       </button>
     </div>
@@ -36,3 +36,5 @@ const getButtonText = () => {
 
 
 export default PokemonCard;
+
+// Old system before list item

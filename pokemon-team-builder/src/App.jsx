@@ -12,7 +12,7 @@ function App() {
     <TeamProvider>
       <div className="App">
         <Banner />
-        <h1>Pokémon Team Builder</h1>
+        <h1 className='title-card'>Pokémon Team Builder</h1>
         <TeamView />
         <Pokedex />
       </div>
