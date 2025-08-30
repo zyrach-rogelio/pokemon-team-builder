@@ -12,12 +12,22 @@ function App() {
     <TeamProvider>
       <div className="App">
         <Banner />
-        <h1 className='title-card'>Pokémon Team Builder</h1>
-        <TeamView />
-        <Pokedex />
+       
+        <main className='main-container'>
+           <div className='pokedex-container'>
+              <h1>Pokémon Team Builder</h1>
+       <Pokedex />
+            </div>
+      
+        <div className='team-container'>
+            <TeamView />
+            </div>
+
+          </main>
       </div>
-    </TeamProvider>
-  );
+     
+    </TeamProvider>   
+    );
 }
 
 export default App;
